@@ -6,11 +6,12 @@ The enemies move on the paved block with different speed and number of enemies.T
 ## YouTube Video
 [![Classic Arcade Game Clone](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=kaifTslArtY)
 
+
 ## Getting Started 
 - Select ```index.html``` to start the game.
-- Download or fork the application from [here]()
+- Download or fork the application from [here](https://github.com/hanvoCS/frontend-nanodegree-arcade-game.git)
 
-- Start game [here]()
+- Start game [here](https://github.com/frontend-nanodegree-arcade-game/index.html)
 ## References
 -  [ (1)](https://stackoverflow.com/questions/1527803/generating-random-whole-numbers-in-javascript-in-a-specific-range) Generating random whole numbers in JavaScript in a specific range.
 - [ (2)](http://www.lostdecadegames.com/how-to-make-a-simple-html5-canvas-game/) How to make a simple HTML5 Canvas game. 

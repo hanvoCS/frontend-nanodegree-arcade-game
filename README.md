@@ -1,6 +1,22 @@
-frontend-nanodegree-arcade-game
-===============================
+# Classic Arcade Game Clone
+This is a 2D classic arcade game which have player and 
+ group of enemies (bugs).
+The enemies move on the paved block with different speed and number of enemies.The player needs to reach the water, without colliding with any enemies (bugs) to win.
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+## YouTube Video
+[![Classic Arcade Game Clone](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=kaifTslArtY)
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+## Getting Started 
+- Select ```index.html``` to start the game.
+- Download or fork the application from [here]()
+
+- Start game [here]()
+## References
+-  [ (1)](https://stackoverflow.com/questions/1527803/generating-random-whole-numbers-in-javascript-in-a-specific-range) Generating random whole numbers in JavaScript in a specific range.
+- [ (2)](http://www.lostdecadegames.com/how-to-make-a-simple-html5-canvas-game/) How to make a simple HTML5 Canvas game. 
+-  [(3)](https://www.youtube.com/watch?v=NcdrPUl-mZQ) Mastering HTML5 Canvas: Working with Text.
+- [(4)](https://msdn.microsoft.com/en-us/library/gg589497(v=vs.85).aspx) Using HTML5 canvas and JavaScript to detect collisions between vehicles in a game. 
+
+
+## License
+Udacity(c) [2018]() alhanouf almazroua 

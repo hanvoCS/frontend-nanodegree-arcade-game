@@ -1,5 +1,5 @@
- var isColl = false;
-var isWin = false;
+var isColl = false;
+//var isWin = false;
 var isDead=0;
 // Enemies our player must avoid
 var Enemy = function() {
@@ -20,6 +20,7 @@ var Enemy = function() {
     // a helper we've provided to easily load images
    
     this.sprite = 'images/enemy-bug.png';
+     
 };
 
 
@@ -35,20 +36,26 @@ Enemy.prototype.update = function(dt) {
      if (this.x >= 505) {this.x=0;} 
     
  // Check for collision
-   isColl = isCollision(this);
-    if (isColl){
+    
+       if (player.y + 130 >= enemy.y + 90
+        && player.y + 75 <= enemy.y + 130
+        && player.x + 25 <= enemy.x + 85
+        && player.x + 75 >= enemy.x + 10) {
         player.x = 200;
         player.y = 400;
-        isDead++;
-    }
-// check if player win or not 
-    isWin= winner();
-     if (isWin){  
-        score++;
-        level++;
-        enemyRefresh(level);
-      }
-
+      
+            isDead++;
+       }
+    
+    // check if player win or not 
+       if (player.y +65 <= 0) {        
+        player.x = 200;
+        player.y = 400;
+    score++;
+    level++;
+       enemyRefresh(level);
+  }
+    
 };
 
  
@@ -85,16 +92,17 @@ Player.prototype.update= function(){
         player.y = 1;
     }
     
-// call function to display score and level 
-    
-    //ScoreANDLevel(score,level);
 
     
+    
+
 };
 
 Player.prototype.render= function(){
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
-             ScoreANDLevel(score,level);                                                           
+   
+    ScoreANDLevel(score,level);                       
+    
 };
 
 Player.prototype.handleInput = function(key) {
@@ -124,15 +132,18 @@ var  ScoreANDLevel = function(S,L){
  
 };
 
-var winner = function (){
-      if (player.y + 65 <= 0) {        
+/*var winner = function (){
+       if (player.y +65 <= 0) {        
         player.x = 200;
         player.y = 400;
-      
- return true ; }
+    score++;
+    level++;
+       enemyRefresh(level);
+  }
     
-};
+};*/
 
+/*
    var isCollision = function(E) {
         // check for collision between enemy and player
       if (
@@ -148,7 +159,7 @@ var winner = function (){
  return false;
     
     
-};
+};*/
 
 var enemyRefresh = function (level){
      allEnemies.length=0; // to clean the array
@@ -169,8 +180,9 @@ var enemyRefresh = function (level){
 var allEnemies= [];
 // Place the player object in a variable called player
 
-var enemy = new Enemy(); 
 var player= new Player();
+var enemy = new Enemy(); 
+
 var score = 0;
 var level = 1; 
 allEnemies.push(enemy);

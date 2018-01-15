@@ -1,4 +1,3 @@
-
 var isDead=0;
 // Enemies our player must avoid
 var Enemy = function() {
